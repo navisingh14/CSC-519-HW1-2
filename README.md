@@ -29,13 +29,12 @@ Ans. One of the definitions of the term idempotency is that if an operation is e
 
 2. Describe several issues related to management of your inventory.
 3. Describe two configuration models. What are disadvantages and advantages of each model?  
-Ans. PULL model: In this model the clients poll periodically to get the updates from a configuration server.  
-Advantages: This is better at keeping the assets in sync with periodical polling. Also, this is more scalable since a central server doesn't need to know the map of the entire architecture.  
-Disadvantages: Different pull based system use different proprietary language which makes it a problem to replicate the changes in the codes used on the client side.  
-ASSET can register itself.  
-PUSH model: In this model, a configuration server pushes to all the clients whenever there are new changes.  
-Advantages of this are: This is easier to manage since there's only one central server that does all the work.  
-Disadvantages: There is no track of the current state of the clients and they can drift from the state without any checks.
+Ans. **PULL model**: In this model the clients poll periodically to get the updates from a configuration server.  
+**Advantages**: This is better at keeping the assets in sync with periodical polling. Also, this is more scalable since a central server doesn't need to know the map of the entire architecture since each client registers itself independently of the other.  
+**Disadvantages**: Different pull based system use different proprietary language which makes it a problem to replicate the changes in the codes used on the client side.  
+**PUSH model**: In this model, a configuration server pushes to all the clients whenever there are new changes.  
+**Advantages**: This is easier to manage since there's only one central server that does all the work.  
+**Disadvantages**: There is no track of the current state of the clients and they can drift from the state without any checks.
 
 
 4. What are some of the consquences of not having proper configuration management?
