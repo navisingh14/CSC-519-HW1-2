@@ -14,7 +14,7 @@ nsingh9@ncsu.edu
 [Click here to go to the provisioning code for AWS](https://github.ncsu.edu/nsingh9/CSC-519-HW1-2/blob/master/AWS/main.js)
 
 #### Link to the Digital Ocean nodejs code
-[Click here to go to the provisioning code for AWS](https://github.ncsu.edu/nsingh9/CSC-519-HW1-2/blob/master/AWS/main.js)
+[Click here to go to the provisioning code for AWS](https://github.ncsu.edu/nsingh9/CSC-519-HW1-2/blob/master/DigitalOceanDroplet/main.js)
 
 
 #### Screencast link:
