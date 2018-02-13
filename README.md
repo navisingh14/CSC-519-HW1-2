@@ -37,4 +37,9 @@ Ans. **PULL model**: In this model the clients poll periodically to get the upda
 **Disadvantages**: There is no track of the current state of the clients and they can drift from the state without any checks.
 
 
-4. What are some of the consquences of not having proper configuration management?
+4. What are some of the consquences of not having proper configuration management?  
+Ans. It decreases efficiencies, stability and control as there is no visibility and tracking of the changes.  
+Higher costs as there is no detailed knowledge of all the elements of the configuration which leads to unnecessary duplication.  
+Decreased system reliability through slower detection and correction of improper configurations that could negatively impact performance.
+Slower problem resolution, thus worsening quality of service and hence .  
+Less efficient change management by not knowing what the prior structure is in order to design changes that do not produce new incompatibilities and/or problems.  
