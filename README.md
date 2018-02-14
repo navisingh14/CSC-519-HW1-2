@@ -14,7 +14,7 @@ nsingh9@ncsu.edu
 [Click here to go to the provisioning code for AWS](https://github.ncsu.edu/nsingh9/CSC-519-HW1-2/blob/master/AWS/main.js)
 
 #### Link to the Digital Ocean nodejs code
-[Click here to go to the provisioning code for AWS](https://github.ncsu.edu/nsingh9/CSC-519-HW1-2/blob/master/DigitalOceanDroplet/main.js)
+[Click here to go to the provisioning code for Digital Ocean](https://github.ncsu.edu/nsingh9/CSC-519-HW1-2/blob/master/DigitalOceanDroplet/main.js)
 
 
 #### Screencast link:
@@ -26,8 +26,9 @@ nsingh9@ncsu.edu
 1. Define idempotency. Give two examples of an idempotent operation and non-idempotent operation.  
 Ans. One of the definitions of the term idempotency is that if an operation is executed once or multiple times, it always produces the same output. For example, GET and DELETE from HTTP protocol are idempotent since getting a value once or multiple times doesn't change the value itself and similarly the case with DELETE as deleting once or multiple times doesn't affect the deleted value. Commands like 'mv a b' and 'ssh-keyscan -H >> .ssh/known_hosts' is not idempotent since after renaming once we won't be able to find the same file again, and similary executing the second command will add multiple lines to the known_hosts file
 
-
-2. Describe several issues related to management of your inventory.
+2. Describe several issues related to management of your inventory.  
+Ans. The issues arise since all the parts are not stored at the same location and different locations might have different access restrictions. For example, most of the keys are stored at .ssh/ location which the user might not have stored at the right place or might have the privileges to access it. 
+  
 3. Describe two configuration models. What are disadvantages and advantages of each model?  
 Ans. **PULL model**: In this model the clients poll periodically to get the updates from a configuration server.  
 **Advantages**: This is better at keeping the assets in sync with periodical polling. Also, this is more scalable since a central server doesn't need to know the map of the entire architecture since each client registers itself independently of the other.  
